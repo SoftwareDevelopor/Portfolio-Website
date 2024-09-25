@@ -1,0 +1,110 @@
+@media (max-width: 994px){
+    
+    .row1{
+        display: block;
+        position: relative;
+        z-index: -1;
+        
+    }    
+    article{
+        transform: translateY(300px);
+    }
+    .photo{
+        transform: translateY(-200px);
+    }
+    input{
+        box-sizing: border-box;
+        width: 80%;
+    }
+    .index{
+        z-index: 1;
+    }
+    .row2{
+        height: auto;
+        display: block;
+        justify-content: space-evenly;
+        text-align: center;
+        
+    }
+
+    .footer-image{
+        align-items: center;
+    }
+    
+    .row3{
+        display: block;
+    }
+    
+    .social-items div{
+        align-items: center;
+        justify-content: center;
+    }
+
+    .row3 #my-photo{
+        transform: translateX(-50px);
+        opacity: 0;
+        animation: moving 0.5s forwards 2s;
+    }
+    @keyframes moving{
+        0%{
+            opacity: 0;
+        }    
+        100%{
+            transform: translateX(4px);
+            opacity: 1;
+        }
+    }
+    
+    .about-me-content{
+        transform: translateX(60px);
+        opacity: 0;
+        animation: righttoleft 0.6s forwards 2.5s;
+    }
+    
+    @keyframes righttoleft{
+        0%{
+            opacity: 0;
+        }        
+        100%{
+            transform: translateX(-3px);
+            opacity: 1;
+        }
+    }
+
+    .connect-with-us{
+        width: 300px;
+        margin: auto;
+    }
+
+    .connect-with-us .second-div{
+        width: 130px;
+    }
+
+    .second-div .computer-photo img{
+        justify-content: center;
+        align-items: center;
+        margin-right: 10px;
+    }
+
+    .profile-image-card{
+        margin: 20px 10px;
+    }
+    .profile-image-card .profile-img{
+        width: 100px;
+        height: 100px;
+    }
+    
+    .skill-inner-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .skill-inner-container .skill-box{
+        width: 150px;
+        object-fit: cover;
+        margin-right: 0px;
+    }
+    .skill-box.skill-title{
+        font-size: 5px;
+    }
+}  

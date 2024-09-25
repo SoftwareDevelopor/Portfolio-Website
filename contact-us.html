@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+</head>
+<body>
+    
+    <nav class="navbar navbar-default navigation">                
+        <div class="container">
+            <div class="row">
+                <div class="navbar-header">
+                    <img src="./New folder (2)/logo.png" class="col-md-4 col-sm-4 col-lg-5" alt="logo" width="200px" height="28px"/>
+                    <button type="button" title="Nav" class="navbar-toggle " data-toggle="collapse" data-target="#mynavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="mynavbar">            
+                    <ul class="nav navbar-nav col-md-9 col-sm-9 col-lg-7 navbar-right text-justify">
+                        <li class="nav-item active"><a href="index.html">Home</a></li>
+                        <li><a href="education.html">Education</a></li>
+                        <li><a href="skill.html">Skills</a></li>
+                        <li><a href="#">Service</a></li>
+                        <li><a href="about-me.html" class="link">About Us</a></li>
+                        <li class="nav navbar-form">
+                            <form method="dialog" onsubmit="searchfun(this)">
+                                <span class="">
+                                    <input type="text" placeholder="Search" aria-label="" autocomplete="off" id="search-form">
+                                    <button type="submit" class="btn btn-warning btn-group-xs btn-group-sm search-btn" onclick="searchfun(this)">Search</button>
+                                </span>
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row5">
+                <div class="inner-container">
+                    <h1>LET'S CONNECT WITH US</h1>
+                    <div class="text-justify"><h4>If you have any queries or want to contact with us, just please fill out the short contact form. I will respond to you very soon.</h4></div>
+                </div>
+                <div class="text-center in-container">
+                    <h2>CONTACT US FORM</h2>
+                </div>
+                <div class="response-message">
+                    <h3>Thanking You</h3>
+                    <h4>For Filling The form.</h4>
+                    <h4>I will surely respond to you very soon.</h4>
+                    
+                </div>
+                
+                <div class="contact-us-form">
+                    <form id="contact-form">
+                        <label>Name:</label>
+                        <input type="text" name="name" required="" id="user-name" oninput="validateusername()"/>
+                        <label>Email id:</label>
+                        <input type="email" name="email" required="" id="user-email-id" oninput="validateemailid()"/>
+                        <label>Message:</label>
+                        <textarea name="message" required="" id="user-message"></textarea>
+                        <!-- <input type="submit" value="Submit" class=" btn btn-block" id="submit-button" onclick="submitForm()" style="background-color: #2759b0;"/> -->
+                        <button type="submit" value="Submit" class="btn btn-block" id="submit-button" onclick="submitForm()" style="background-color: #2759b0;">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+    <footer class=" footer-container">
+        <div class="footer footercontnt">
+            <div>
+                <div class="row2 show-grid">
+                    <div class="">
+                        <img src="./New folder (2)/logowhite.png" alt="logo" width="120px" height="100px" class="img-responsive footer-image"/>
+                        <h5><a href="https://maps.app.goo.gl/Hpv92VyYRvtSVbbV6" title="location"><i class="fa-solid fa-location-dot" style="color: #ffffff;"></i></a>Panda Sarai, Laheia Sarai, Darbhanga, Bihar, <br/>India, PIN Code:-846001</h5>
+                        <h5>Mobile Number:- +91 7061352871</h5>
+                    </div>
+                    <div class="footer-pages">
+                        <h3>Pages</h3>
+                        <h5><a href="index.html">Home</a></h5>
+                        <h5><a href="education.html">Education</a></h5>
+                        <h5><a href="skill.html">Skills</a></h5>
+                        <h5>Service</h5>
+                        <h5><a href="contact-us.html" title="contactus">Contact Us</a></h5>
+                        <h5><a href="portfolio-sitemap.html">Sitemap</a></h5>
+                        <h5><a href="about-me.html" title="about-us">About Us</a></h5>
+                    </div>
+                    <div class="social-items">
+                        <h3>Social Accounts</h3>
+                        <div>
+                            <a href="https://www.facebook.com/kumar.saheb.52206/" title="facebook"><i class="fa-brands fa-facebook facebok" style="color: #2759b0;"></i></a>
+                            <a href="https://www.instagram.com/hack_this_site1/" title="insta"><i class="fa-brands fa-square-instagram insta" style="color: rgb(234, 90, 11)"></i></a>
+                            <a href="https://github.com/SaurabhPortfolio1" title="github"><i class="fa-brands fa-github" style="color: #fbfcfa;"></i></a>
+                            <a href="https://accounts.google.com/b/0/AddMailService" title="gmail"><i class="fa-solid fa-envelope" style="color: rgb(233, 64, 26);"></i></a>
+                            <a href="https://www.linkedin.com/in/saurabh-kumar-178953203/" title="linkedin"><i class="fa-brands fa-linkedin" style="color: rgb(14, 146, 234);"></i></a>
+                        </div>
+
+                    </div>
+    
+                    
+                    
+                </div>
+                <div id="footer-content">
+                    Copy Right &copy; All Rights Registered &reg; by Domain Authority
+                </div>
+            </div> 
+            
+            
+        </div>
+    </footer>
+
+</body>
+<script src="js/jquery-3.7.1.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/jsfile.js"></script>
+</html>
